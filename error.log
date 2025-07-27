@@ -1,0 +1,32 @@
+[28-Nov-2024 14:08:54 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'sinhvien.masv' in 'on clause' in C:\xampp\htdocs\Doan2\loaddetaidoan.php:73
+Stack trace:
+#0 C:\xampp\htdocs\Doan2\loaddetaidoan.php(73): mysqli->prepare('\r\n    SELECT \r\n...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Doan2\loaddetaidoan.php on line 73
+[28-Nov-2024 14:12:05 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'sinhvien.masv' in 'on clause' in C:\xampp\htdocs\Doan2\loaddetaidoan.php:73
+Stack trace:
+#0 C:\xampp\htdocs\Doan2\loaddetaidoan.php(73): mysqli->prepare('\r\n    SELECT \r\n...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Doan2\loaddetaidoan.php on line 73
+[28-Nov-2024 14:30:14 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= 'Khóa luận'
+    GROUP BY detai.madetai' at line 9 in C:\xampp\htdocs\Doan2\loaddetaikhoaluan.php:75
+Stack trace:
+#0 C:\xampp\htdocs\Doan2\loaddetaikhoaluan.php(75): mysqli->prepare('\r\n    SELECT \r\n...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Doan2\loaddetaikhoaluan.php on line 75
+[28-Nov-2024 14:31:34 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= 'Khóa luận'
+    GROUP BY detai.madetai' at line 9 in C:\xampp\htdocs\Doan2\loaddetaikhoaluan.php:75
+Stack trace:
+#0 C:\xampp\htdocs\Doan2\loaddetaikhoaluan.php(75): mysqli->prepare('\r\n    SELECT \r\n...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Doan2\loaddetaikhoaluan.php on line 75
+[28-Nov-2024 14:46:34 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'gvhd.magiangvien' in 'on clause' in C:\xampp\htdocs\Doan2\lichsuphancongdoan.php:47
+Stack trace:
+#0 C:\xampp\htdocs\Doan2\lichsuphancongdoan.php(47): mysqli->prepare('\r\n    SELECT \r\n...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Doan2\lichsuphancongdoan.php on line 47
+[28-Nov-2024 14:46:41 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'gvhd.magiangvien' in 'on clause' in C:\xampp\htdocs\Doan2\lichsuphancongdoan.php:47
+Stack trace:
+#0 C:\xampp\htdocs\Doan2\lichsuphancongdoan.php(47): mysqli->prepare('\r\n    SELECT \r\n...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Doan2\lichsuphancongdoan.php on line 47

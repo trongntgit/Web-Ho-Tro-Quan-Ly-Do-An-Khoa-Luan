@@ -1,0 +1,50 @@
+[07-Dec-2024 16:20:35 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'qlnv.lich' doesn't exist in C:\xampp\htdocs\Doan2\saplich.php:27
+Stack trace:
+#0 C:\xampp\htdocs\Doan2\saplich.php(27): mysqli->prepare('\r\n    SELECT CO...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Doan2\saplich.php on line 27
+[07-Dec-2024 16:20:35 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'qlnv.lich' doesn't exist in C:\xampp\htdocs\Doan2\saplich.php:27
+Stack trace:
+#0 C:\xampp\htdocs\Doan2\saplich.php(27): mysqli->prepare('\r\n    SELECT CO...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Doan2\saplich.php on line 27
+[07-Dec-2024 16:20:35 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'qlnv.lich' doesn't exist in C:\xampp\htdocs\Doan2\saplich.php:27
+Stack trace:
+#0 C:\xampp\htdocs\Doan2\saplich.php(27): mysqli->prepare('\r\n    SELECT CO...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Doan2\saplich.php on line 27
+[07-Dec-2024 16:20:35 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'qlnv.lich' doesn't exist in C:\xampp\htdocs\Doan2\saplich.php:27
+Stack trace:
+#0 C:\xampp\htdocs\Doan2\saplich.php(27): mysqli->prepare('\r\n    SELECT CO...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Doan2\saplich.php on line 27
+[07-Dec-2024 16:20:35 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'qlnv.lich' doesn't exist in C:\xampp\htdocs\Doan2\saplich.php:27
+Stack trace:
+#0 C:\xampp\htdocs\Doan2\saplich.php(27): mysqli->prepare('\r\n    SELECT CO...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Doan2\saplich.php on line 27
+[07-Dec-2024 16:20:35 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'qlnv.lich' doesn't exist in C:\xampp\htdocs\Doan2\saplich.php:27
+Stack trace:
+#0 C:\xampp\htdocs\Doan2\saplich.php(27): mysqli->prepare('\r\n    SELECT CO...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Doan2\saplich.php on line 27
+[07-Dec-2024 16:20:35 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'qlnv.lich' doesn't exist in C:\xampp\htdocs\Doan2\saplich.php:27
+Stack trace:
+#0 C:\xampp\htdocs\Doan2\saplich.php(27): mysqli->prepare('\r\n    SELECT CO...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Doan2\saplich.php on line 27
+[07-Dec-2024 16:20:35 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'qlnv.lich' doesn't exist in C:\xampp\htdocs\Doan2\saplich.php:27
+Stack trace:
+#0 C:\xampp\htdocs\Doan2\saplich.php(27): mysqli->prepare('\r\n    SELECT CO...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Doan2\saplich.php on line 27
+[07-Dec-2024 16:20:35 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'qlnv.lich' doesn't exist in C:\xampp\htdocs\Doan2\saplich.php:27
+Stack trace:
+#0 C:\xampp\htdocs\Doan2\saplich.php(27): mysqli->prepare('\r\n    SELECT CO...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Doan2\saplich.php on line 27
+[07-Dec-2024 16:20:35 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'qlnv.lich' doesn't exist in C:\xampp\htdocs\Doan2\saplich.php:27
+Stack trace:
+#0 C:\xampp\htdocs\Doan2\saplich.php(27): mysqli->prepare('\r\n    SELECT CO...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Doan2\saplich.php on line 27

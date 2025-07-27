@@ -1,0 +1,16 @@
+{
+    "name": "unicode/phpspreadsheet",
+    "autoload": {
+       
+    },
+    "authors": [
+        {
+            "name": "Tuan Trong"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^2.2",
+        "tecnickcom/tcpdf": "^6.7",
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

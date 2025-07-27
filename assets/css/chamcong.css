@@ -1,0 +1,547 @@
+*{
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #237bd3;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: #d0e1f4;;
+}
+
+body{
+    font-size: 1.6rem;
+     font-family: 'Poppins', sans-serif;
+}
+.inp{
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+.content{
+    width: 1170px;
+    max-width: calc(100% - 135px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    display: inline-block;
+    min-width: 120px;
+    border-radius: 25px;
+    background: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #FFF;
+    padding: 11px 41px;
+    text-align: center;
+    border: none;
+}
+
+.btn:hover{
+    opacity: 0.8;
+    
+}
+
+.body .content{
+    background-color: #FFFCF4;
+    border-radius: 16px;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    padding: 0px 50px 50px 50px;
+}
+
+.body .content .title{
+    justify-items: center;
+    text-align: center;
+    margin-top: 20px;
+    color: #171100;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.17; /* 117.241% */
+    letter-spacing: 1.16px;
+    padding:  20px;
+}
+
+.body .content .title span{
+    color: #237bd3;;
+
+}
+
+.body .name_class {
+    padding: 20px;
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.17; /* 117.241% */
+    letter-spacing: 1.16px;
+    
+}
+
+.body .name_class {
+    margin-left: 100px;
+}
+
+.body .name_class p + p{
+    margin-left: 50px;
+} 
+
+.body .name_class span{
+    color: #237bd3;
+}
+
+.body .content .summary{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    font-style: italic;
+    margin-bottom: 3%;
+}
+.body .content .btn-action{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+ .content .btn-action .check{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+ }
+
+ .content .btn-action .btn{
+    margin-left: 15px;
+ }
+
+ #attendanceTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#attendanceTable th, #attendanceTable td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#attendanceTable th {
+    background-color: #d0e1f4;;
+    font-weight: 600;
+}
+
+/* Overlay */
+#modal-nhanvien {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Nền mờ tối */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Đảm bảo modal nằm trên các phần tử khác */
+    transition: opacity 0.3s ease;
+}
+
+/* Modal Content */
+#modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Modal Header */
+#modal-content h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Tab buttons */
+#modal-tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.tab-button:hover {
+    background: #0056b3;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Modal Close Button */
+#close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#close-modal:hover {
+    background: #c82333;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* File upload styling */
+input[type="file"] {
+    margin-top: 10px;
+}
+
+/* Button styling */
+button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #218838;
+}
+
+
+
+ /* Basic styling for the dialog */
+ /* Basic styling for the dialog */
+#dialog {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Increased width for better readability */
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* More pronounced shadow */
+    z-index: 1000;
+    font-family: Arial, sans-serif; /* Better font for readability */
+    color: #333; /* Darker text for better contrast */
+}
+
+/* Header styling */
+#dialog h2 {
+    margin-top: 0;
+    font-size: 1.5em; /* Larger header font size */
+    color: #007BFF; /* Blue color for the header */
+    border-bottom: 2px solid #ddd; /* Underline effect */
+    padding-bottom: 10px; /* Space between header text and border */
+}
+
+/* Button styling */
+#dialog button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px; /* Rounded button corners */
+    background: #007BFF; /* Button color */
+    color: #fff; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+#dialog button:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+#dia-camera {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 720px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none; /* Hidden by default */
+}
+
+.draggable {
+    cursor: move; /* Hiển thị con trỏ tay khi di chuyển */
+}
+
+.resizable {
+    resize: both;
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Modern Dialog Styling */
+/* Lớp phủ để làm mờ nội dung bên dưới */
+.overlay {
+    display: none; /* Ẩn lớp phủ khi không cần thiết */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu sắc và độ mờ của lớp phủ */
+    z-index: 999; /* Đảm bảo lớp phủ nằm dưới dialog */
+}
+
+/* Đảm bảo dialog nằm trên lớp phủ */
+.modern-dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    backdrop-filter: blur(5px); /* Thêm hiệu ứng làm mờ nền */
+}
+
+
+.modern-dialog h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.modern-dialog label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+.modern-dialog input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.dialog-buttons {
+    text-align: center;
+}
+
+.dialog-buttons .btn-save,
+.dialog-buttons .btn-close {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dialog-buttons .btn-save {
+    background-color:var(--primary-color);
+    color: white;
+}
+
+.dialog-buttons .btn-save:hover {
+    background-color: #45a049;
+}
+
+.dialog-buttons .btn-close {
+    background-color: #f44336;
+    color: white;
+}
+
+.dialog-buttons .btn-close:hover {
+    background-color: #da190b;
+}
+
+
+
+
+/* Toàn bộ modal */
+/* Toàn bộ modal */
+#exportModal {
+    display: flex;
+    position: fixed;
+    z-index: 1000; /* Đảm bảo modal nằm trên các phần tử khác */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.5); /* Màu nền bán trong suốt */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    backdrop-filter: blur(5px); /* Thêm hiệu ứng làm mờ nền */
+}
+
+/* Nội dung của modal */
+.modal-content {
+    background-color: #ffffff; /* Màu nền trắng cho nội dung modal */
+    padding: 30px;
+    border: none;
+    width: 400px; /* Kích thước modal */
+    border-radius: 15px; /* Làm tròn các góc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng bóng đổ */
+    transition: transform 0.3s ease-in-out; /* Hiệu ứng chuyển động khi hiển thị */
+    margin-left: 500px;
+    margin-top: 200px;
+}
+
+.modal-content:hover {
+    transform: scale(1.05); /* Tăng kích thước khi hover để tạo hiệu ứng nổi bật */
+}
+
+/* Các trường nhập liệu */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px; /* Kích thước chữ lớn hơn để dễ đọc */
+}
+
+/* Nút lưu và hủy */
+#saveFileBtn,
+#cancelBtn {
+    display: inline-block;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#saveFileBtn {
+    background-color: #28a745;
+}
+
+#saveFileBtn:hover {
+    background-color: #218838; /* Màu nền khi hover */
+}
+
+#cancelBtn {
+    background-color: #dc3545;
+    margin-left: 10px;
+}
+
+#cancelBtn:hover {
+    background-color: #c82333; /* Màu nền khi hover */
+}
+
+
+
+
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    /* margin-bottom: 500px; */
+    height: 400px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.dialog2 {
+    display: none; /* Ẩn dialog mặc định */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;   
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    position: relative;
+    height: 600px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+

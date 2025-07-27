@@ -1,0 +1,1285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+#sp1{
+    color:#15972b ;
+}
+#sp2{
+    color: #d61f1f;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: hsl(110, 55%, 87%);
+    border-radius: 12px;
+}
+
+/* Đặt logo và text theo hàng ngang */
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Logo hình ảnh */
+.logo_img {
+    width: 60px;
+    height: auto;
+    margin-right: 20px;
+}
+
+
+.logo-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Tiêu đề chính */
+.logo-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #15972b;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+/* Phụ đề */
+.logo-subtitle {
+    font-size: 15px;
+    font-weight: 600;
+    color: #d61f1f;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    max-width: 1200px;
+    margin: 2rem auto;
+    gap: 2rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 2rem 3rem;
+    background-color: hsl(110, 55%, 87%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+    text-decoration: none;
+}
+
+.logo_img {
+    width: 50px;
+    height: auto;
+    margin-right: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.logo_img:hover {
+    transform: scale(1.1); /* Hiệu ứng khi hover */
+}
+
+.header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #15972b;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.header h1:hover {
+    color: var(--primary-color); /* Đổi màu chữ khi hover */
+}
+.main-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.4rem;
+    font-weight: 700;
+    color:#15972b;
+}
+
+
+
+/* Sidebar thông tin người dùng */
+.user-info {
+    flex: 0 0 250px;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-card {
+    text-align: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 4px solid #4CAF50;
+}
+
+.user-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.user-card p {
+    margin: 0.3rem 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Phần danh sách đề tài */
+.project-list {
+    flex: 1;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem; /* Thêm khoảng cách giữa các danh sách đề tài */
+    overflow-x: auto; /* Thêm cuộn ngang nếu cần */
+}
+
+/* Để bố trí các danh sách đề tài nằm ngang */
+.project-list-container {
+    display: flex;
+    flex-direction: column; /* Giữ các phần tử theo chiều dọc */
+    gap: 2rem; /* Khoảng cách giữa các danh sách */
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+table {
+    width: 100%;
+    max-width: 100%; /* Đảm bảo bảng không vượt quá chiều rộng của phần chứa */
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+table th, table td {
+    padding: 1rem; /* Tăng padding cho ô */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    min-width: 120px; /* Đặt chiều rộng tối thiểu cho các ô để tránh co lại quá mức */
+}
+
+
+
+table th {
+    background-color: hsl(110, 55%, 87%);
+    font-weight: 700;
+}
+
+/* Nút hành động */
+.view-btn, .edit-btn, .view-btn-tiendo, .view-btn-huy, .view-btn-cham, .view-btn-sua, .btn-suakq, .btn-congbo, .btn-huykq, .btn-huycongbo, .view-btn-khongdat, .retry-btn {
+    display: inline; /* Thay đổi từ inline sang inline-block */
+    width: 110px;
+    height: 32px;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    min-width: 100px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+.edit-btn, .btn-suakq, .retry-btn {
+    background-color: #ff9800;
+}
+.btn-huykq{
+    background-color: #dc3545;
+}
+
+.view-btn-khongdat{
+    background-color: #dc3545;
+}
+
+
+.btn-huycongbo{
+    background-color: #d1b32d;
+}
+.view-btn:hover, .edit-btn:hover {
+    background-color: #45a049;
+}
+
+
+
+.red-row {
+    background-color: #f8d7da; /* Màu đỏ nhạt */
+    color: #721c24; /* Màu chữ đỏ */
+}
+
+/* Nếu cần thêm khoảng cách cuối cùng */
+td > .edit-btn:last-child {
+    margin-right: 0;
+}
+
+/* Footer ở cuối trang */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+
+
+.modal {
+    display: none; /* Ẩn modal theo mặc định */
+    position: fixed; /* Đặt modal ở vị trí cố định */
+    z-index: 1; /* Đảm bảo modal nằm trên các phần tử khác */
+    left: 0;
+    top: 0;
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    height: 100%; /* Chiếm toàn bộ chiều cao */
+    overflow: auto; /* Bật cuộn nếu cần */
+    background-color: rgba(0, 0, 0, 0.7); /* Màu nền với độ trong suốt */
+}
+
+.modal-content {
+    background-color: #ffffff; /* Màu nền của modal */
+    margin: 10% auto; /* Căn giữa modal */
+    padding: 30px; /* Khoảng cách bên trong */
+    border-radius: 8px; /* Bo góc modal */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Bóng đổ cho modal */
+    width: 85%; /* Chiều rộng của modal */
+    max-width: 1200px; /* Chiều rộng tối đa của modal */
+    animation: fadeIn 0.3s; /* Hiệu ứng hiện lên */
+}
+
+.close {
+    color: #ff0000; /* Màu đỏ cho nút đóng */
+    float: right; /* Đưa nút đóng sang bên phải */
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+}
+
+.close:hover,
+.close:focus {
+    color: #000; /* Đổi màu khi hover */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Nút hiện đại */
+.button {
+    background-color: #15972b; /* Màu nền nút */
+    color: white; /* Màu chữ nút */
+    border: none; /* Không có viền */
+    border-radius: 5px; /* Bo góc */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ khi hover */
+    transition: background-color 0.3s, transform 0.2s; /* Hiệu ứng chuyển màu và phóng to */
+}
+
+.button:hover {
+    background-color: #0d8220; /* Màu nền khi hover */
+    transform: translateY(-2px); /* Di chuyển lên một chút */
+}
+
+.button:active {
+    transform: translateY(1px); /* Di chuyển xuống một chút khi nhấn */
+}
+
+/* Nút đóng modal */
+.button-close {
+    background-color: #dc3545; /* Màu đỏ cho nút đóng */
+}
+
+.button-close:hover {
+    background-color: #c82333; /* Màu đỏ đậm khi hover */
+}
+
+.button.lb{
+    background-color:#c82333;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CSS cho các thông báo */
+.notification {
+    display: none; /* Ẩn mặc định */
+    position: fixed;
+    z-index: 1000;
+    right: 20px; /* Căn phải */
+    top: 20px; /* Căn trên */
+    width: 300px; /* Chiều rộng của dialog */
+    margin: 10px; /* Khoảng cách giữa các dialog */
+    border-radius: 10px; /* Bo góc */
+    transition: opacity 0.5s ease; /* Hiệu ứng mờ */
+}
+
+/* Định dạng cho nội dung dialog */
+.notification .modal-content {
+    border-radius: 10px; /* Bo góc */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Đổ bóng nhẹ hơn */
+    border: none; /* Không có viền */
+    width: 100%; /* Chiếm toàn bộ chiều rộng của dialog */
+    height: 100%; /* Chiếm toàn bộ chiều cao của dialog */
+    display: flex; /* Sử dụng flexbox để căn chỉnh nội dung */
+    flex-direction: column; /* Sắp xếp nội dung theo cột */
+}
+
+/* Định dạng cho các thông báo */
+#dialog-thongbao {
+    background-color: #fff8e1; /* Nền màu vàng nhạt cho thông báo */
+    border-left: 5px solid #ffc107; /* Viền vàng đậm */
+}
+
+#dialog-thanhcong {
+    background-color: #e2f0d5; /* Nền màu xanh nhạt cho thành công */
+    border-left: 5px solid #4caf50; /* Viền xanh lá cây */
+}
+
+#dialog-thatbai {
+    background-color: #f8d7da; /* Nền màu đỏ nhạt cho thất bại */
+    border-left: 5px solid #f44336; /* Viền đỏ đậm */
+}
+
+/* Định dạng cho văn bản thông báo */
+.dialog-title {
+    font-size: 16px; /* Kích thước chữ tiêu đề */
+    font-weight: 600; /* Đậm chữ */
+    margin-bottom: 8px; /* Khoảng cách giữa tiêu đề và nội dung */
+    color: #333; /* Màu chữ cho tiêu đề */
+}
+
+p {
+    margin: 0; /* Bỏ khoảng cách mặc định */
+    color: #555; /* Màu chữ cho nội dung */
+    font-size: 14px; /* Kích thước chữ */
+    line-height: 1.5; /* Giãn cách dòng */
+    flex-grow: 1; /* Để nội dung chiếm hết không gian còn lại */
+}
+
+/* Hiệu ứng khi hiển thị */
+.notification.show {
+    display: block; /* Hiển thị khi cần */
+    opacity: 1; /* Hiện rõ */
+    animation: dropIn 0.5s ease forwards; /* Thêm hiệu ứng xuất hiện */
+}
+
+.notification.hide {
+    opacity: 0; /* Mờ dần */
+    animation: fadeOut 0.5s ease forwards; /* Thêm hiệu ứng biến mất */
+}
+
+/* Định nghĩa hiệu ứng animation */
+@keyframes dropIn {
+    0% {
+        transform: translateY(-20px); /* Bắt đầu từ vị trí trên */
+        opacity: 0; /* Bắt đầu với độ mờ */
+    }
+    100% {
+        transform: translateY(0); /* Kết thúc tại vị trí bình thường */
+        opacity: 1; /* Kết thúc với độ rõ */
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1; /* Bắt đầu với độ rõ */
+    }
+    100% {
+        opacity: 0; /* Kết thúc với độ mờ */
+        transform: translateY(-20px); /* Di chuyển lên một chút khi ẩn */
+    }
+}
+
+
+
+
+
+
+/* loading Overlay phủ toàn màn hình */
+.loading-overlay {
+    display:none; /* Ẩn overlay theo mặc định */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 9999; /* Đảm bảo overlay hiển thị trên cùng */
+    align-items: center;
+    justify-content: center;
+}
+
+/* From Uiverse.io by Cornerstone-04 */ 
+.loader {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+    transform: translateX(-50%);
+   left: 800px;
+   top: 300px;
+  }
+  
+  .loader::before, 
+  .loader::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+    animation: rotate92523 2s infinite cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  
+  .loader::before {
+    background-color: hsl(0deg 74.69% 48.04%);
+  }
+  
+  .loader::after {
+    background-color: hsl(105.23deg 83.33% 30.59%);
+    animation-delay: 1s;
+  }
+  
+  @keyframes rotate92523 {
+    0%, 100% {
+      left: 35px;
+    }
+  
+    25% {
+      transform: scale(.3);
+    }
+  
+    50% {
+      left: 0%;
+    }
+  
+    75% {
+      transform: scale(1);
+    }
+  }
+
+
+
+
+
+/*Css dành cho Lãnh đạo*/
+/* Khoảng cách giữa các phần đề tài của từng giảng viên */
+.teacher-row {
+    background-color: #e9ecef;
+    font-weight: bold;
+    color: #15972b;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0; /* Thêm khoảng cách bên trong hàng */
+    margin-top: 20px; /* Tạo khoảng cách phía trên */
+}
+
+.teacher-row + .table-header {
+    margin-top: 50px; /* Tạo khoảng cách giữa tên giảng viên và tiêu đề bảng */
+}
+
+/* Khoảng cách cuối mỗi phần */
+.project-table tr:last-child {
+    margin-bottom: 20px;
+}
+
+/* Tạo thêm khoảng trống giữa các nhóm đề tài */
+tbody tr:first-child {
+    margin-top: 20px;
+}
+
+
+/* Chỉ áp dụng CSS cho các nút trong .project-list */
+.project-list td > .btn-approve,
+.project-list td > .btn-reject {
+    display: inline-block; /* Đảm bảo nằm ngang */
+    vertical-align: middle; /* Căn giữa theo trục dọc */
+    width: 110px; /* Tự động căn chỉnh chiều rộng */
+    padding: 8px 16px; /* Khoảng cách bên trong nút */
+    height: 32px;   
+    margin: 0 5px; /* Khoảng cách giữa các nút */
+    text-align: center; /* Căn giữa nội dung trong nút */
+    border: none;
+    border-radius: 4px; /* Bo góc nút */
+    cursor: pointer;
+    font-size: 14px; /* Đảm bảo kích thước chữ nhất quán */
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Không cho phép nút bị xuống dòng */
+    margin-top: 5px;
+}
+
+/* Nút duyệt */
+.project-list td > .btn-approve {
+    background-color: #28a745; /* Màu xanh cho nút Duyệt */
+    color: #fff;
+
+}
+
+.project-list td > .btn-approve:hover {
+    background-color: #218838; /* Màu khi hover */
+}
+
+/* Nút không duyệt */
+.project-list td > .btn-reject {
+    background-color: #dc3545; /* Màu đỏ cho nút Không duyệt */
+    color: #fff;
+}
+
+.project-list td > .btn-reject:hover {
+    background-color: #c82333; /* Màu khi hover */
+}
+
+
+
+
+
+
+
+
+
+
+.content{
+    width: 1170px;
+    max-width: calc(100% - 135px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.footer{
+
+    height: 100px;
+    background-color: #212529;
+    color: #BFBCB2;
+   padding-bottom: 250px;
+}
+
+.footer .body{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 30px 0px;
+}
+
+.footer .body .title{
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.footer .body .desc{
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    }
+
+.footer .body span{
+    color: #FFF;
+}
+
+.footer .body .desc{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.footer .body .title{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+#chamdiemModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+#chamdiemContent {
+    position: relative; /* Đảm bảo nút đóng được định vị tương đối với modal content */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease;
+}
+
+#chamdiemModal h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#chamdiemModal p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+#chamdiemModal label {
+    font-size: 14px;
+    color: #333;
+}
+
+#chamdiemModal input[type="number"],
+#chamdiemModal textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#chamdiemModal input[type="number"]:focus,
+#chamdiemModal textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+#chamdiemModal textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    resize: none; /* Ngừng cho phép thay đổi kích thước */
+    overflow-y: auto; /* Hiển thị thanh cuộn dọc khi nội dung vượt quá chiều cao */
+    max-height: 200px; /* Chiều cao tối đa của textarea */
+}
+
+#chamdiemModal textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+
+#btnSaveChamDiem {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#btnSaveChamDiem:hover {
+    background-color: #45a049;
+}
+
+/* Nút đóng (close) */
+#closeModal {
+    position: absolute; /* Đặt tuyệt đối trong khung modal */
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#closeModal:hover {
+    color: #f44336;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+
+#suadiemModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#suadiemContent {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease;
+}
+
+#suadiemModal h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#suadiemModal p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+#suadiemModal label {
+    font-size: 14px;
+    color: #333;
+}
+
+#suadiemModal input[type="number"],
+#suadiemModal textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#suadiemModal input[type="number"]:focus,
+#suadiemModal textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+#suadiemModal textarea {
+    resize: none;
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+#btnSaveSuaDiem {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#btnSaveSuaDiem:hover {
+    background-color: #45a049;
+}
+
+#closeModal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#closeModal:hover {
+    color: #f44336;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+#modalSuaDiemKetQua {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#contentSuaDiemKetQua {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease;
+}
+
+#modalSuaDiemKetQua h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#modalSuaDiemKetQua p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+#modalSuaDiemKetQua label {
+    font-size: 14px;
+    color: #333;
+}
+
+#modalSuaDiemKetQua input[type="number"],
+#modalSuaDiemKetQua textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#modalSuaDiemKetQua input[type="number"]:focus,
+#modalSuaDiemKetQua textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+#modalSuaDiemKetQua textarea {
+    resize: none;
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+#btnSaveSuaDiemKetQua {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#btnSaveSuaDiemKetQua:hover {
+    background-color: #45a049;
+}
+
+#closeModalSuaDiemKetQua {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#closeModalSuaDiemKetQua:hover {
+    color: #f44336;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+#modalSuaDiemKetQuaDoAn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#contentSuaDiemKetQuaDoAn {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease;
+}
+
+#modalSuaDiemKetQuaDoAn h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#modalSuaDiemKetQuaDoAn p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+#modalSuaDiemKetQuaDoAn label {
+    font-size: 14px;
+    color: #333;
+}
+
+#modalSuaDiemKetQuaDoAn input[type="number"],
+#modalSuaDiemKetQuaDoAn textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#modalSuaDiemKetQuaDoAn input[type="number"]:focus,
+#modalSuaDiemKetQuaDoAn textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+#modalSuaDiemKetQuaDoAn textarea {
+    resize: none;
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+#btnSaveSuaDiemKetQuaDoAn {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#btnSaveSuaDiemKetQuaDoAn:hover {
+    background-color: #45a049;
+}
+
+#closeModalSuaDiemKetQuaDoAn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#closeModalSuaDiemKetQuaDoAn:hover {
+    color: #f44336;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Chỉnh kiểu cho mỗi đề tài */
+.project-item {
+    background-color: #ffffff;
+    padding: 15px; /* Giảm padding */
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #4CAF50; /* Nổi bật bằng viền */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Tiêu đề đề tài */
+.project-item h3 {
+    font-size: 1.3em; /* Giảm font-size */
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
+
+/* Thông tin phụ */
+.project-item p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 0.9em; /* Giảm font-size */
+}
+
+/* Danh sách điểm */
+.score-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.score-item {
+    font-size: 0.9em; /* Giảm font-size */
+    padding: 8px 0; /* Giảm padding */
+    border-bottom: 1px dashed #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score-item:last-child {
+    border-bottom: none;
+}
+
+/* Nút sửa điểm */
+.score-item button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px; /* Giảm padding */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    font-size: 0.8em; /* Giảm font-size */
+}
+
+.score-item button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Hiển thị "Chưa chấm" */
+.score-item .chua-cham {
+    color: #e74c3c; /* Màu đỏ */
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Nút tổng hợp điểm */
+.btn-tonghop {
+    display: block;
+    margin-top: 15px;
+    background-color: #45a049;
+    color: white;
+    border: none;
+    padding: 10px 0; /* Giảm padding */
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em; /* Giảm font-size */
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.btn-tonghop:hover {
+    background-color: #1b8d21;
+    transform: translateY(-3px);
+}
+
+/* Media queries cho responsive */
+@media (max-width: 768px) {
+    .project-item {
+        padding: 10px; /* Giảm padding */
+    }
+
+    .project-item h3 {
+        font-size: 1.1em; /* Giảm font-size */
+    }
+
+    .btn-tonghop {
+        font-size: 0.8em; /* Giảm font-size */
+        padding: 8px 0; /* Giảm padding */
+    }
+
+    .score-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .score-item button {
+        margin-top: 8px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+.view-btn-sua{
+    background-color: #ffc107;
+}
+
+
+
+
+.btn-back {
+    position: relative;
+    display: block; /* Để nút hoạt động như một khối */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    background-color: #4CAF50; /* Màu xanh lá */
+    color: white; /* Màu chữ */
+    padding: 12px 25px; /* Khoảng cách trong nút */
+    font-size: 16px; /* Kích thước chữ */
+    border-radius: 8px; /* Góc bo tròn */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    transition: all 0.3s ease; /* Hiệu ứng mượt */
+    font-family: Arial, sans-serif; /* Font chữ đơn giản */
+    width: 100px;
+    right:  -91%;
+    margin-bottom: 50px;
+}
+
+.btn-back:hover {
+    background-color: #45a049; /* Màu xanh đậm hơn khi hover */
+    transform: translateY(-3px); /* Hiệu ứng nổi lên */
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2); /* Tăng đổ bóng khi hover */
+}
+
+.btn-back:active {
+    background-color: #3e8e41; /* Màu xanh đậm khi nhấn */
+    transform: translateY(0); /* Trả lại vị trí */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Giảm đổ bóng */
+}
+

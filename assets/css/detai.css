@@ -1,0 +1,1199 @@
+/* css/style.css */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Đặt body thành flex container với hướng dọc */
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(110, 55%, 87%);
+    color: #15972b;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+#sp1{
+    color:#15972b ;
+}
+#sp2{
+    color: #d61f1f;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: hsl(110, 55%, 87%);
+    border-radius: 12px;
+}
+
+/* Đặt logo và text theo hàng ngang */
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Logo hình ảnh */
+.logo_img {
+    width: 60px;
+    height: auto;
+    margin-right: 20px;
+}
+
+
+.logo-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Tiêu đề chính */
+.logo-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #15972b;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+/* Phụ đề */
+.logo-subtitle {
+    font-size: 15px;
+    font-weight: 600;
+    color: #d61f1f;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
+.container-top {
+    max-width: 1500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1; /* Cho phép container mở rộng để chiếm không gian còn lại giữa header và footer */
+    padding: 70px;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    max-width: 1200px;
+    margin: 2rem auto;
+    gap: 2rem;
+}
+
+.header-big {
+    display: flex;
+    align-items: center;
+    padding: 2rem 3rem;
+    background-color: hsl(110, 55%, 87%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    margin-left: calc((100vw - 100%) / -2); /* Center align to full width */
+    
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+    text-decoration: none;
+}
+
+.logo_img {
+    width: 50px;
+    height: auto;
+    margin-right: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.logo_img:hover {
+    transform: scale(1.1); /* Hiệu ứng khi hover */
+}
+
+.header-big h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #15972b;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.header-big h1:hover {
+    color: var(--primary-color); /* Đổi màu chữ khi hover */
+}
+.main-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.4rem;
+    font-weight: 700;
+    color:#15972b;
+}
+
+
+
+
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.section {
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 15px 0;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.section-title {
+    font-size: 1.2em;
+    color: #007bff;
+    margin: 0;
+}
+
+.section-content {
+    padding: 10px 0;
+}
+
+.sub-section {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.button-add {
+    background-color: #28a745;
+    color: white;
+}
+
+.button-add:hover {
+    background-color: #218838;
+}
+
+.button-edit, .button-delete {
+    margin-right: 5px;
+}
+
+.button-edit {
+    background-color: #ffc107;
+    color: white;
+}
+
+.button-edit:hover {
+    background-color: #e0a800;
+}
+
+.button-delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.button-delete:hover {
+    background-color: #c82333;
+}
+
+.file-upload, .note-input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Đảm bảo padding và border không làm tăng kích thước */
+}
+
+textarea {
+    height: 150px; /* Chiều cao cố định cho textarea */
+    resize: none; /* Ngăn không cho người dùng thay đổi kích thước textarea */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content button {
+    margin-top: 10px;
+}
+
+
+/* Phần chat */
+/* Chat container */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Chat box */
+.chat-box {
+    flex: 1;
+    overflow-y: auto;
+    max-height: 400px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* Message styles */
+.message {
+    max-width: 70%;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+
+/* Styles for messages sent by the user */
+.message.self {
+    background-color: #00aaff;
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+}
+
+/* Styles for messages sent by others */
+.message.other {
+    background-color: #e0e0e0;
+    color: black;
+    align-self: flex-start;
+    text-align: left;
+}
+
+/* Chat input and send button */
+.chat-input {
+    width: 100%;
+    height: 50px;
+    resize: none;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 8px;
+}
+
+.button-send {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button-send:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the chat message container */
+.message {
+    position: relative;
+    margin: 10px 0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    max-width: 70%;
+    word-wrap: break-word;
+    background-color: #f1f1f1;
+}
+
+/* Right-aligned message (user's own message) */
+.align-right {
+    background-color: #dcf8c6;
+    margin-left: auto;
+}
+
+/* Left-aligned message (other users' messages) */
+.align-left {
+    background-color: #ffffff;
+    margin-right: auto;
+}
+
+/* Styling for the delete button */
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    color: #ff4d4d;
+    font-size: 12px;
+    cursor: pointer;    
+    padding: 2px 4px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hover effect for delete button */
+.delete-button:hover {
+    background-color: #ff4d4d;
+    color: #ffffff;
+}
+
+/* Message timestamp styling */
+.message small {
+    display: block;
+    font-size: 10px;
+    color: #999;
+    margin-top: 4px;
+}
+
+
+
+
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* Container chứa file input và các nút */
+.file-upload-container {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 10px; /* Khoảng cách giữa các phần tử */
+}
+
+/* Đảm bảo rằng các nút Check AI và Đánh giá có kích thước đồng đều và không bị giãn rộng */
+.button {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+/* Đảm bảo trường input file không bị ảnh hưởng */
+.file-upload {
+    padding: 8px;
+    font-size: 14px;
+    width: 200px; /* Đặt chiều rộng cố định cho input file */
+}
+
+.uploaded-file-link {
+    display: block;
+    margin-top: 5px;
+    color: #007bff;
+    text-decoration: underline;
+}
+.sub-section-content {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    position: relative;
+    max-width: 100%;          /* Đảm bảo chiều rộng không vượt quá */
+    max-height: 300px;        /* Đặt chiều cao tối đa cho thẻ */
+    overflow-y: auto;         /* Hiển thị thanh cuộn dọc khi cần */
+    word-wrap: break-word;    /* Tự động xuống dòng nếu nội dung quá dài */
+    white-space: pre-wrap;    /* Giữ khoảng trắng và xuống dòng đúng */
+    padding: 10px;            /* Khoảng cách giữa nội dung và viền thẻ */
+    border: 1px solid #ccc;  /* Đặt viền cho thẻ */
+}
+
+.sub-section-content .file-upload {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.uploaded-file-link {
+    display: inline-block;
+    margin-left: 10px;
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.content-actions {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.content-actions .button {
+    display: inline-block;
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+.evaluation-buttons {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.evaluation-buttons .button {
+    margin-right: 5px;
+    padding: 5px 8px;
+}
+
+
+.content{
+    width: 1170px;
+    max-width: calc(100% - 135px);
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer .content{
+    margin-left: 300px;
+}
+
+
+.footer {
+    display: flex;
+    background-color: #212529;
+    color: #BFBCB2;
+    padding: 10px;
+    flex-shrink: 0; /* Giữ nguyên chiều cao */
+    width: 100vw;
+    margin-left: calc((100vw - 100%) / -2); /* Canh giữa toàn bộ chiều rộng */
+}
+
+.footer .content {
+    display: flex;
+    justify-content: space-between; /* Khoảng cách đều giữa 2 cột */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    width: 100%;
+    max-width: 1200px; /* Đặt chiều rộng tối đa */
+    padding: 30px 0; /* Khoảng cách trên và dưới cho nội dung */
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Hiển thị các phần tử theo cột */
+    align-items: flex-start; /* Căn lề trái */
+}
+
+.footer .title {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.75;
+    margin-bottom: 10px;
+}
+
+.footer .desc {
+    color: #BFBCB2;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.85;
+    margin-bottom: 5px;
+}
+
+.footer .desc span {
+    color: #FFF;
+}
+.footer-right{
+    margin-top: 50px;
+}
+
+
+
+/* #editModal - Chỉnh sửa Nộp sản phẩm */
+/* Tổng quan modal */
+#editModal {
+    display: none; /* Ẩn modal mặc định */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Nền mờ */
+}
+
+/* Nội dung modal */
+#editModal .modal-content {
+    background-color: #fff;
+    margin: 10% auto; /* Canh giữa modal */
+    padding: 20px;
+    border-radius: 8px;
+    width: 35%; /* Chiều rộng modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out; /* Hiệu ứng xuất hiện */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Tiêu đề modal */
+#editModal h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #007bff;
+    text-align: left; /* Căn trái */
+}
+
+/* Nút đóng modal */
+#editModal .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#editModal .close:hover,
+#editModal .close:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Label */
+#editModal label {
+    display: block !important;
+    margin: 15px 0 10px;
+    font-weight: bold;
+    color: #15972b;
+    text-align: left !important;
+}
+
+/* Input ngày */
+#editModal input[type="date"] {
+    width: 97% !important;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Textarea ghi chú */
+#editModal textarea {
+    width: 100%;    
+    height: 80px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+/* Nút lưu thay đổi */
+#editModal button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block; /* Hiển thị inline-block để dễ căn chỉnh */
+    margin-top: 20px;
+    width: auto; /* Đảm bảo nút không chiếm toàn bộ chiều rộng */
+    align-self: flex-end; /* Đưa nút sang bên phải */
+
+}
+
+#editModal button:hover {
+    background-color: #218838;
+}
+
+/* Hiệu ứng xuất hiện modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* #editAnnouncementModal - Chỉnh sửa Thông báo */
+
+/* Modal tổng quát */
+#editAnnouncementModal {
+    display: none; /* Ẩn modal mặc định */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Nền mờ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Nội dung modal */
+#editAnnouncementModal .modal-content {
+    background: #ffffff;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: slide-down 0.3s ease-out; /* Hiệu ứng xuất hiện */
+}
+
+/* Tiêu đề modal */
+#editAnnouncementModal h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Textarea */
+#editAnnouncementModal textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    box-sizing: border-box; /* Đảm bảo không bị vượt kích thước */
+    margin-bottom: 20px;
+}
+
+/* Vùng nút */
+#editAnnouncementModal .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Nút chung */
+#editAnnouncementModal .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+/* Nút lưu */
+#editAnnouncementModal .btn-save {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#editAnnouncementModal .btn-save:hover {
+    background-color: #218838;
+}
+
+/* Nút đóng */
+#editAnnouncementModal .btn-close {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+#editAnnouncementModal .btn-close:hover {
+    background-color: #c82333;
+}
+
+/* Hiệu ứng slide */
+@keyframes slide-down {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/* #editDocumentModal - Chỉnh sửa Tài liệu */
+#editDocumentModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#editDocumentModal .modal-content {
+    background: #f1f8e9; /* Xanh lá cây nhạt */
+    margin: 10% auto;
+    padding: 25px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+#editDocumentModal .close {
+    color: #388e3c; /* Xanh lá */
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#editDocumentModal .close:hover {
+    color: #d32f2f; /* Đỏ đậm */
+}
+
+#editDocumentModal button {
+    background-color: #66bb6a; /* Xanh lá */
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#editDocumentModal button:hover {
+    background-color: #388e3c; /* Xanh lá đậm */
+}
+
+/* Các thành phần chung */
+#editModal input[type="date"],
+#editModal textarea,
+#editAnnouncementModal textarea,
+#editDocumentModal input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    resize: none; /* Ngăn chỉnh kích thước */
+}
+
+#editModal label,
+#editAnnouncementModal h2,
+#editDocumentModal h2 {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+}
+
+#editModal textarea,
+#editAnnouncementModal textarea {
+    min-height: 100px;
+}
+
+
+
+
+
+    /* Đặt overlay cho modal */
+    #subSectionModal {
+        display: none; /* Ẩn modal mặc định */
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
+    }
+
+    /* Nội dung modal */
+    #subSectionModal .modal-content {
+        background-color: #fff;
+        margin: 10% auto; /* Căn giữa theo chiều dọc */
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        width: 50%; /* Độ rộng của modal */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: left; /* Canh trái nội dung */
+    }
+
+    /* Tiêu đề */
+    #subSectionModal h2 {
+        margin-top: 0;
+        font-size: 1.5em;
+        text-align: center;
+        color:#0e761f;
+    }
+
+    /* Nhãn và input */
+    #subSectionModal label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+    }
+
+    #subSectionModal select,
+    #subSectionModal input[type="date"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1em;
+    }
+
+    /* Nút */
+    #subSectionModal button {
+        padding: 10px 15px;
+        margin: 5px;
+        border: none;
+        border-radius: 4px; 
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    #submissionDeadline{
+        width: 97% !important;
+    }
+
+    /* Nút Thêm */
+    #subSectionModal button:first-of-type {
+        background-color: #15972b;
+        color: #fff;
+    }
+
+    #subSectionModal button:first-of-type:hover {
+        background-color: #0e761f;
+    }
+
+    /* Nút Hủy */
+    #subSectionModal button:last-of-type {
+        background-color: #c82333;
+        color: #fff;
+    }
+
+    #subSectionModal button:last-of-type:hover {
+        background-color: #9c101e;
+    }
+
+    /* Tùy chọn bổ sung */
+    #submissionOptions {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+
+
+
+    /* Kiểu dáng chung cho modal */
+#model-danhgia {
+    display: none; /* Ẩn modal mặc định */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Nền mờ */
+}
+
+/* Nội dung modal */
+#model-danhgia .modal-content {
+    background-color: #fff;
+    margin: 10% auto; /* Canh giữa modal */
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%; /* Chiều rộng modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out; /* Hiệu ứng hiện modal */
+}
+
+/* Tiêu đề modal */
+#model-danhgia h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #15972b;
+    text-align: left; /* Căn trái */
+    padding-left: 5px; /* Tạo khoảng cách nhẹ từ lề trái */
+}
+
+/* Nút đóng modal */
+#model-danhgia .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#model-danhgia .close:hover,
+#model-danhgia .close:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Phần thân modal */
+#model-danhgia .modal-body {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Textarea đánh giá */
+#model-danhgia textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}   
+
+/* Label và input phần trăm */
+/* Label và input phần trăm */
+#model-danhgia label {
+    display: block;
+    margin: 15px 0 10px;
+    font-weight: bold;
+    color: #15972b;
+    text-align: left; /* Căn trái */
+    padding-left: 5px; /* Khoảng cách từ lề trái */
+}
+
+#model-danhgia input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Hiển thị tổng phần trăm */
+#model-danhgia #total-percentage {
+    color: #007bff; /* Màu xanh nổi bật */
+    font-size: 18px;
+}
+
+/* Phần footer */
+#model-danhgia .modal-footer {
+    text-align: right;
+    margin-top: 20px;
+}
+
+#model-danhgia .button-save {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#model-danhgia .button-save:hover {
+    background-color: #218838;
+}
+
+/* Hiệu ứng hiển thị modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+  
+
+  /* CSS cho phần hiển thị tệp đã chọn */
+.file-preview {
+    background-color: #f9f9f9; /* Nền xám nhạt */
+    border: 1px solid #ddd; /* Viền nhẹ */
+    border-radius: 8px; /* Bo tròn góc */
+    padding: 10px; /* Khoảng cách nội dung */
+    margin-top: 10px; /* Khoảng cách trên */
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+.file-preview p {
+    margin: 0;
+    padding-left: 10px;
+    color: #333;
+    font-weight: 500;
+}
+
+.file-preview::before {
+    content: '\f15b'; /* Icon file từ FontAwesome */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 20px;
+    color: #66bb6a; /* Màu xanh lá nhạt */
+}
+
+/* CSS cho input file */
+.file-upload {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.file-upload:hover,
+.file-upload:focus {
+    border-color: #66bb6a; /* Đổi màu viền khi hover */
+}
+
+/* CSS cho placeholder của textarea */
+.note-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 10px;
+    resize: none; /* Không cho phép thay đổi kích thước */
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1); /* Đổ bóng bên trong */
+}
+
+.note-input::placeholder {
+    color: #aaa; /* Màu placeholder */
+    font-style: italic;
+}
+
+.button.button-send{
+    background-color: #15972b; /* Màu nền nút */
+}
+
+.button.button-evaluate{
+    background-color: #15972b; /* Màu nền nút */
+    color: white;
+
+}
